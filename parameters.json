@@ -1,0 +1,69 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "westeurope"
+        },
+        "networkInterfaceName": {
+            "value": "table4blbcorosevm742"
+        },
+        "networkSecurityGroupName": {
+            "value": "table4blbcorosevm-nsg"
+        },
+        "networkSecurityGroupRules": {
+            "value": []
+        },
+        "virtualNetworkName": {
+            "value": "table4blbcentosrg-vnet"
+        },
+        "addressPrefix": {
+            "value": "10.1.0.0/24"
+        },
+        "subnetName": {
+            "value": "default"
+        },
+        "subnetPrefix": {
+            "value": "10.1.0.0/24"
+        },
+        "publicIpAddressName": {
+            "value": "table4blbcorosevm-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Dynamic"
+        },
+        "publicIpAddressSku": {
+            "value": "Basic"
+        },
+        "virtualMachineName": {
+            "value": "table4blbcorosevm"
+        },
+        "virtualMachineRG": {
+            "value": "table4blbcentosrg"
+        },
+        "osDiskType": {
+            "value": "Premium_LRS"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_D2s_v3"
+        },
+        "adminUsername": {
+            "value": "azureops"
+        },
+        "adminPublicKey": {
+            "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDbR/1hwpa2Cl83/GY/psEBGdBpRKa/i87b9oPobPhhKaXnOPJzZgvjpCSB5RHVBVjVMX+uKGLg/JpTzghwxRzpc3jAJ2pL3AJYGi4tA1SZKtrKX3mKDJdiWixikRuH3HB+5mo7axleLwM0XMiNReJyPyMArjylDrrM1XJc9oljNA4kaLYGk9VlO6yPnzGVqBgbV5iXI1t+kOh2DeaTy6cgUC+ON8gQMQ8ggUDlRoP7RY7IaKMBqqJ1QpzbAJdl/ycpM4zLvH8EyppzhVxfyXI84V5L66R+7fh8+/RQsGWhqqTUERcMJOgLgBbQQT2IaRZNM3mSQWqDx+epmz44C7k5"
+        },
+        "diagnosticsStorageAccountName": {
+            "value": "table4blbcentosrgdiag"
+        },
+        "diagnosticsStorageAccountId": {
+            "value": "Microsoft.Storage/storageAccounts/table4blbcentosrgdiag"
+        },
+        "diagnosticsStorageAccountType": {
+            "value": "Standard_LRS"
+        },
+        "diagnosticsStorageAccountKind": {
+            "value": "Storage"
+        }
+    }
+}
