@@ -3,5 +3,6 @@ package_upgrade: true
 runcmd:
   - sudo dpkg --configure -a
   - sudo apt-get install nginx -y
+  - sudo systemctl enable nginx.service
   - sudo waagent -deprovision+user -force
-
+  
