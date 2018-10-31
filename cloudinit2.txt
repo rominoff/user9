@@ -1,6 +1,7 @@
 #cloud-config
 package_upgrade: true
 runcmd:
+  - sudo dpkg --configure -a
   - sudo apt-get install nginx -y
   - sudo waagent -deprovision+user -force
 
